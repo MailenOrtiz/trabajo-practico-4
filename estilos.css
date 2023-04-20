@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* HERO */
+
+/* fondo */
+.hero {
+    background-image: url(imagenes/fondohero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.658);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* barra de navegación*/
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+header img {
+    width: 19%;
+    padding: 28px 0px 0px 100px;
+}
+
+header i {
+    display: none;
+}
+
+ul {
+    display: flex;
+    margin-right: 90px;
+}
+
+li {
+    display: flex;
+    padding: 28px 35px 0px 0px;
+}
+
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s;
+}
+
+li a:hover {
+    transform: scale(1.1);
+}
+
+/* texto hero */
+
+.textohero {
+    position: relative;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 125px 0px 0px 120px;
+    z-index: 100;
+
+}
+
+.textohero h1 {
+    color: white;
+    font-size: 35px;
+    margin-left: 4px;
+    position: absolute;
+    margin-bottom: 30px;
+    font-weight: 400;
+
+}
+
+.textohero h2 {
+    color: #ffd504;
+    font-size: 120px;
+    font-weight: 700;
+    padding-top: 20px;
+    transition: 0.3s;    
+}
+
+.textohero p {
+    color: white;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+span {
+    color: white;
+}
+
+/* redes sociales */
+
+.redes {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    padding: 145px 0px 30px 80px;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.icon {
+    color: white;
+    align-items: center;
+}
+
+.face, .twit, .insta, .pint {
+    transition: 0.3s;
+}
+
+.face:hover {
+    color: #3b5998;
+}
+
+.twit:hover {
+    color: #00acee;
+}
+
+.insta:hover {
+    color: #E1306C;
+}
+
+.pint:hover {
+    color: #c8232c;
+}
+
+/* imagenes en hero */
+
+.divhero1 img {
+    position: absolute;
+    top: 18%;
+    right: 33%;
+    width: 26%;
+    border-radius: 15px;
+    z-index: 90;
+}
+
+.divhero2 img {
+    position: absolute;
+    top: 51%;
+    right: 32%;
+    width: 21%;
+    border-radius: 15px;
+    z-index: 90;
+}
+
+.divhero3 img {
+    position: absolute;
+    top: 30%;
+    right: 13%;
+    width: 21%;
+    border-radius: 15px;
+    z-index: 80;
+}
+
+
+/* SECCION TOURS */
+
+.tours {
+    background-color: #1b1d1c;
+    height: 127vh;
+}
+
+.tours h2 {
+    color: #ffd504;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    border-bottom: 2px solid #ffd504;
+}
+
+/* cajas de tours */
+
+.cajastours1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    height: 74vh;
+    transition: 0.2s;
+}
+
+.botontours a {
+    color: black;
+    background-color: #ffd504;
+    border: 2px solid #ffd504;
+    position: absolute;
+    bottom: 4%;
+    transition: 0.2s;
+}
+
+.botontours a:hover {
+    background-color: #00abee00;
+    color: black;
+    border: 2px solid #ffd504;
+    transform: scale(1.06);    
+}
+
+/* ver más tours */
+
+.pasartour {
+    position: absolute;
+    right: 38%;
+    top: 209%;
+    display: flex;
+    
+}
+
+.pasartour i {
+    color: #ffd504;
+    padding: 0px 20px 0px 20px;
+}
+
+
+.pasartour h5 {
+    color: white;
+    font-weight: 200;
+    align-content: center;
+    transition: 0.5s;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 13px;
+    cursor: pointer;
+
+}
+
+.pasartour h5:hover {
+    color:#ffd504;
+    border-bottom: 1px solid #ffd504;
+
+}
+
+/* SECCION ABOUT US */
+
+.seccionabout {
+    background-image: url(imagenes/about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 96vh;
+}
+
+/* texto about */
+
+.textoabout {
+    justify-content: left;
+    padding: 120px 58% 120px 180px;
+    background-color:#1b1d1c71;
+    display: block;
+
+}
+
+.textoabout h2 {
+    font-weight: 700;
+    color: #ffd504;
+    font-size: 60px;
+    display: inline;
+}
+
+.textoabout p {
+    font-weight: 500;
+    color: white;
+    margin-top: 20px;
+}
+
+ /* icono */
+
+ .textoabout i{
+    color: #ffd504;
+    font-size: 50px;
+    display: inline;
+ }
+
+
+/* SECCION CONTACTO */
+
+.contact {
+    background-color: #1b1d1c;
+    height: 120vh;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #ffd504;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.spanform {
+    color: red;
+}
+
+form {
+    color: white;
+    padding: 10px;
+}
+
+.form1 label, .form2 label, .form3 label {
+    display: block;
+    text-align: left;
+    padding: 30px 0px 6px 500px;
+}
+
+.form1 input, .form2 input {
+    padding: 10px 140px 10px 10px;
+    border-radius: 10px;
+    outline: none
+}
+
+.form3 input {
+    padding: 10px 140px 120px 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* boton contacto */
+
+.botoncontact button {
+    padding: 9px 50px 9px 50px;
+    margin-top: 40px;
+    background-color: #ffd504;
+    border: 1px solid #ffd504;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.botoncontact button:hover {
+    background-color: #00abee00;
+    color: white;
+    transform: scale(1.07);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #1b1d1c;
+    border-top: 2px solid #ffd504;
+    height: 15vh;
+}
+
+.infofooter {
+    padding-top: 20px;
+    justify-content: center;
+    margin-right: 0px;
+    
+}
+
+.lifooter a{
+    justify-content: center;
+    padding: 0px;
+}
+
+
+/* RESPONSIVE TABLET */
+
+@media (min-width:768px) and (max-width:1023px) {
+
+    /* HERO */
+
+    header img {
+        width: 30%;
+    }
+
+    .divhero1, .divhero2, .divhero3 {
+        display: none;
+    }
+
+    /* TOURS */
+    
+    .pasartour {
+        left: 35%;
+        right: 0%;
+    }
+
+    /* ABOUT US */
+    
+    .textoabout { 
+        padding: 120px 45% 120px 160px;
+    }
+
+    .seccionabout {
+        height: 80vh;
+    }
+
+    /* CONTACTO */
+
+    .form1 label, .form2 label, .form3 label {
+        padding: 30px 0px 6px 340px;
+        
+    }
+}
+
+
+/* RESPONSIVE CELULAR */
+
+@media (max-width:767px) {
+
+    /* HERO */
+
+    header img {
+       width: 40%;
+    }
+
+    .divhero1, .divhero2, .divhero3 {
+        display: none;
+    }
+
+    .hero i {
+        display: flex;
+        color: white;
+        font-size: 180%;
+        padding-right: 80px;
+    }
+
+    .hero a {
+        text-decoration: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .redes i {
+        padding-left: 0px;
+    }
+
+    /* TOURS */
+
+    .pasartour {
+        left: 30%;
+        right: 0%;
+    }
+
+    /* ABOUT US */
+
+    .textoabout { 
+        padding: 90px 44% 120px 60px;
+    }
+
+    .seccionabout {
+        height: 80vh;
+    }
+
+    /* CONTACTO */
+
+    .form1 label, .form2 label, .form3 label {
+        padding: 30px 0px 6px 210px;
+        
+    }
+
+}
+
+    
+
+
+
+
